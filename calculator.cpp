@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -7,7 +8,7 @@ int main() {
 
     cout << "Enter first number: ";
     cin >> a;
-    cout << "Choose operator (+ - * /): ";
+    cout << "Choose operator (+ - * / %): ";
     cin >> op;
     cout << "Enter second number: ";
     cin >> b;
@@ -27,6 +28,12 @@ int main() {
                 cout << "Cannot divide by zero" << endl;
             else
                 cout << "Result = " << a / b << endl;
+            break;
+        case '%':
+            if (b == 0)
+                cout << "Cannot divide by zero" << endl;
+            else
+                cout << "Result = " << fmod(a, b) << endl;
             break;
         default:
             cout << "Invalid operator" << endl;
