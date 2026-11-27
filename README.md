@@ -1,1 +1,1 @@
-# cpp_calculator
+# cpp_calculatorOperators: + - * / % ^
