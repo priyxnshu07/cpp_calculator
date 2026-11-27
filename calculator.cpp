@@ -8,7 +8,7 @@ int main() {
 
     cout << "Enter first number: ";
     cin >> a;
-    cout << "Choose operator (+ - * / %): ";
+    cout << "Choose operator (+ - * / % ^): ";
     cin >> op;
     cout << "Enter second number: ";
     cin >> b;
@@ -34,6 +34,9 @@ int main() {
                 cout << "Cannot divide by zero" << endl;
             else
                 cout << "Result = " << fmod(a, b) << endl;
+            break;
+        case '^':
+            cout << "Result = " << pow(a, b) << endl;
             break;
         default:
             cout << "Invalid operator" << endl;
